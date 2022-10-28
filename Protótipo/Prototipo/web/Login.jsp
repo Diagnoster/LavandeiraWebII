@@ -26,8 +26,10 @@
                     <label>Senha</label>
                     <input name="senha" type="text" class="form-control" id="inputSenha" placeholder="Senha" required>
                 </div>
-                <button type="submit" class="btn btn-default"> Login </button>         
+                <button type="submit" class="btn btn-default"> Login </button>    
             </form>
+                <h4>Não tem cadastro?</h4>
+                <button class="btn btn-default"><a href="Cadastro.jsp">Criar conta</a></button>
         </div> 
     </body>
 </html>
