@@ -1,0 +1,114 @@
+<%-- 
+    Document   : ConsultaPedido
+    Created on : 5 de nov. de 2022, 15:43:21
+    Author     : lucfg
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Consulta de pedidos</title>
+        <link href="https://bootswatch.com/3/superhero/bootstrap.css" rel="stylesheet">
+        <link href="css/main.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <span>Barra de navegação aqui</span>
+            <form>
+                <div class="form-group">
+                    <label for="pedido"><h3>Pesquisar pedido</h3></label>
+                    <input style="border-radius: 20px; width: 50%" 
+                           name="pedido" type="text" id="inputPedido" class="form-control"
+                           placeholder="Pesquisar pedido...">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioState" id="radioAberto">
+                        <label class="form-check-label" for="radioAberto">
+                          Aberto
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioState" id="radioFinalizado">
+                        <label class="form-check-label" for="radioFinalizado">
+                          Finalizado
+                        </label>
+                    </div>
+                    <input type="submit" hidden>
+                </div>
+            </form>
+        </div>
+        <div class="container smallTopGap">
+            <table class="table table-striped">
+                <h4>Resultados:</h4>
+                <thead>
+                    <tr>
+                        <th>Número do Pedido</th>
+                        <th>Nome do Cliente</th>
+                        <th>Valor Total</th>
+                        <th>Prazo</th>
+                        <th>Situação</th>
+                        <th>Visualizar Pedido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>00001</td>
+                        <td>Jõao da Silva</td>
+                        <td>R$ 250,00</td>
+                        <td>01/12/2022</td>
+                        <td>Aberto</td>
+                        <td><a href="ConsultarPedido.jsp"><button style="background-color: transparent; border: none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg></button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>00001</td>
+                        <td>Jõao da Silva</td>
+                        <td>R$ 250,00</td>
+                        <td>01/12/2022</td>
+                        <td>Aberto</td>
+                        <td><a href="ConsultarPedido.jsp"><button style="background-color: transparent; border: none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg></button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>00001</td>
+                        <td>Jõao da Silva</td>
+                        <td>R$ 250,00</td>
+                        <td>01/12/2022</td>
+                        <td>Aberto</td>
+                        <td><a href="ConsultarPedido.jsp"><button style="background-color: transparent; border: none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg></button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>00001</td>
+                        <td>Jõao da Silva</td>
+                        <td>R$ 250,00</td>
+                        <td>01/12/2022</td>
+                        <td>Aberto</td>
+                        <td><a href="ConsultarPedido.jsp"><button style="background-color: transparent; border: none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg></button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>00001</td>
+                        <td>Jõao da Silva</td>
+                        <td>R$ 250,00</td>
+                        <td>01/12/2022</td>
+                        <td>Aberto</td>
+                        <td><a href="ConsultarPedido.jsp"><button style="background-color: transparent; border: none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg></button></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>            
+    </body>
+</html>
