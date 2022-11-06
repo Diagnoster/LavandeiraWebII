@@ -11,11 +11,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Pesquisa de pedidos</title>
         <link href="https://bootswatch.com/5/superhero/bootstrap.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="js/navBarGenerator.js"></script>
         <link href="css/main.css" type="text/css" rel="stylesheet">
     </head>
     <body>
+        <div id="nav-placeholder"></div>
         <div class="container">
-            <span>Barra de navegação aqui</span>
             <form method="post">
                 <div class="form-group smallTopGap">
                     <label for="pedido"><h3>Pesquisar pedido</h3></label>

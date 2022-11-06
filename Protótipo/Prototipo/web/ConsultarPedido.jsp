@@ -12,9 +12,11 @@
         <title>Consultar Pedido</title>
         <link href="https://bootswatch.com/5/superhero/bootstrap.css" rel="stylesheet">
         <link href="css/main.css" type="text/css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="js/navBarGenerator.js"></script>
     </head>
     <body>
-        <span>Barra de navegação aqui</span>
+        <div id="nav-placeholder"></div>
         <div class="container mediumTopGap">
             <h2>Consulta: Pedido 00001</h2>
             <table class="table table-striped table-hover table-bordered mediumTopGap">
