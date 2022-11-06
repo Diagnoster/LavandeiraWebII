@@ -28,3 +28,47 @@ body {
     background-color: transparent; 
     border: none
 }
+
+header {
+    background-color: white;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.1rem;
+    list-style-type: none;
+}
+
+header ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .4s;
+}
+
+header ul a:hover {
+    color: #37d0fa;
+}
+
+.link-esq {
+    margin-right: auto;
+}
+
+.link-dir {
+    margin-left: auto;
+}
+
+.link-esq, .link-dir {
+    font-size: 1.2rem;
+}
+
+.link-dir button {
+    background: none;
+    
+}
+
+.hidden {
+    display: none;
+}
