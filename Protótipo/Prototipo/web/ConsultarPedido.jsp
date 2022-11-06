@@ -12,7 +12,7 @@
         <title>Consultar Pedido</title>
         <link href="https://bootswatch.com/5/superhero/bootstrap.css" rel="stylesheet">
         <link href="css/main.css" type="text/css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
         <script src="js/navBarGenerator.js"></script>
     </head>
     <body>
