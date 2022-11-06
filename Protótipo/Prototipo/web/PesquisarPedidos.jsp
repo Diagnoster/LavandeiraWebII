@@ -16,13 +16,15 @@
     <body>
         <div class="container">
             <span>Barra de navegação aqui</span>
-            <form>
+            <form method="post">
                 <div class="form-group smallTopGap">
                     <label for="pedido"><h3>Pesquisar pedido</h3></label>
-                    <input style="border-radius: 20px; width: 50%" 
-                           name="pedido" type="text" id="inputPedido" class="form-control"
-                           placeholder="Pesquisar pedido...">
-                    <input type="submit" hidden>
+                    <div style="width: 50%" class="input-group">
+                        <input 
+                            name="pedido" type="text" id="inputPedido" class="form-control"
+                            placeholder="Pesquisar pedido...">
+                        <button class="btn btn-secondary" type="submit" >Pesquisar</button>
+                    </div>
                 </div>
                 <div class="form-group smallTopGap">
                     <div class="form-check form-check-inline">
@@ -73,7 +75,7 @@
             </form>
         </div>
         <div class="container mediumTopGap">
-            <table class="table table-striped">
+            <table class="table table-striped table-hover table-bordered">
                 <h4>Resultados:</h4>
                 <thead>
                     <tr>
