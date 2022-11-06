@@ -72,3 +72,9 @@ header ul a:hover {
 .hidden {
     display: none;
 }
+
+ .container-border{
+ border: 1px solid #081b96;
+ border-radius: 15px;  
+ margin-top: 50px;
+ }
