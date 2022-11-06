@@ -9,19 +9,28 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Consulta de pedidos</title>
-        <link href="https://bootswatch.com/3/superhero/bootstrap.css" rel="stylesheet">
+        <title>Pesquisa de pedidos</title>
+        <link href="https://bootswatch.com/5/superhero/bootstrap.css" rel="stylesheet">
         <link href="css/main.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <span>Barra de navegação aqui</span>
             <form>
-                <div class="form-group">
+                <div class="form-group smallTopGap">
                     <label for="pedido"><h3>Pesquisar pedido</h3></label>
                     <input style="border-radius: 20px; width: 50%" 
                            name="pedido" type="text" id="inputPedido" class="form-control"
                            placeholder="Pesquisar pedido...">
+                    <input type="submit" hidden>
+                </div>
+                <div class="form-group smallTopGap">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioState" id="radioTodos">
+                        <label class="form-check-label" for="radioTodos">
+                          Todos
+                        </label>
+                    </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="radioState" id="radioAberto">
                         <label class="form-check-label" for="radioAberto">
@@ -34,11 +43,36 @@
                           Finalizado
                         </label>
                     </div>
-                    <input type="submit" hidden>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioState" id="radioCancelado">
+                        <label class="form-check-label" for="radioCancelado">
+                          Cancelado
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioState" id="radioPago">
+                        <label class="form-check-label" for="radioPago">
+                          Pago
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioState" id="radioAguardando">
+                        <label class="form-check-label" for="radioAguardando">
+                          Aguardando Pagamento
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioState" id="radioRecolhido">
+                        <label class="form-check-label" for="radioRecolhido">
+                          Recolhido
+                        </label>
+                    </div>
                 </div>
             </form>
         </div>
-        <div class="container smallTopGap">
+        <div class="container mediumTopGap">
             <table class="table table-striped">
                 <h4>Resultados:</h4>
                 <thead>

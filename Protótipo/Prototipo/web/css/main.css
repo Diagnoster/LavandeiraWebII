@@ -17,7 +17,11 @@ body {
 }
 
 .smallTopGap {
-    margin-top: 50px;
+    margin-top: 20px;
+}
+
+.mediumTopGap {
+    margin-top: 50px
 }
 
 .searchButton {
