@@ -9,13 +9,14 @@
 <html>
     <head>
          <jsp:include page="sources.jsp" /> <%-- HEAD --%>  
+         <link rel="stylesheet" href="css/dashboard.css"/>
         <title>Consultar Pedido</title>
     </head>
     <body>
         <jsp:include page="header.jsp" /> <%-- HEADER --%>
-        <div class="container mediumTopGap">
+        <div class="container text-light mt-5">
             <h2>Consulta: Pedido 00001</h2>
-            <table class="table table-striped table-hover table-bordered mediumTopGap">
+            <table id="mainTable" class="table">
                 <thead>
                     <tr>
                         <th>Item</th>
@@ -24,24 +25,24 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Calça jeans</td>
+                        <td>Calça</td>
                         <td>R$ 25,00</td>
                     </tr>
                     <tr>
-                        <td>Camisa branca</td>
+                        <td>Camisa</td>
                         <td>R$ 75,00</td>
                     </tr>
                     <tr>
-                        <td>Paletó</td>
+                        <td>Outro</td>
                         <td>R$ 100,00</td>
                     </tr>
                     <tr>
-                        <td>Sweater vermelho</td>
+                        <td>Camisa</td>
                         <td>R$ 50,00</td>
                     </tr>
                 </tbody>
             </table>
-            <table class="table table-bordered table-striped">
+            <table style="color: white" class="table">
                 <thead>
                     <tr>
                         <th>Total de itens</th>

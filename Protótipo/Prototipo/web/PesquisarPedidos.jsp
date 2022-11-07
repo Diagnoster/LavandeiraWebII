@@ -9,11 +9,13 @@
 <html>
     <head>
         <title>Pesquisa de pedidos</title>
-          <jsp:include page="sources.jsp" /> <%-- HEAD --%>  
+          <jsp:include page="sources.jsp" /> <%-- HEAD --%> 
+           
+         <link rel="stylesheet" href="css/dashboard.css"/>
     </head>
     <body>
      <jsp:include page="header.jsp" /> <%-- HEADER --%>
-        <div class="container">
+        <div class="container text-light mt-5">
             <form method="post">
                 <div class="form-group smallTopGap">
                     <label for="pedido"><h3>Pesquisar pedido</h3></label>
@@ -72,9 +74,10 @@
                 </div>
             </form>
         </div>
-        <div class="container mediumTopGap">
-            <table class="table table-striped table-hover table-bordered">
-                <h4>Resultados:</h4>
+        <div class="container text-light mt-5">
+        
+            <h4>Resultados:</h4>
+            <table id="mainTable" class="table table-hover">
                 <thead>
                     <tr>
                         <th>Número do Pedido</th>
