@@ -48,6 +48,10 @@ header ul a {
     transition: .4s;
 }
 
+#diferente{
+    font-size: 12px;
+}
+
 header ul a:hover {
     color: #37d0fa;
 }

@@ -8,16 +8,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <jsp:include page="sources.jsp" /> <%-- HEAD --%>  
         <title>Consultar Pedido</title>
-        <link href="https://bootswatch.com/5/superhero/bootstrap.css" rel="stylesheet">
-        <link href="css/main.css" type="text/css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <script src="js/navBarGenerator.js"></script>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     </head>
     <body>
-        <div id="nav-placeholder"></div>
+        <jsp:include page="header.jsp" /> <%-- HEADER --%>
         <div class="container mediumTopGap">
             <h2>Consulta: Pedido 00001</h2>
             <table class="table table-striped table-hover table-bordered mediumTopGap">
