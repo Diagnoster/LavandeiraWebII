@@ -11,21 +11,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="js/navBarGenerator.js"></script>
         <link href="css/main.css" type="text/css" rel="stylesheet">
         <title>Pedido - FastClean</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     </head>
     <body>
-        <header class="container-fluid shadow-sm mb-5">
-            <nav>
-                <ul>
-                    <li class="link-esq"><a href="index.html">Fastclean</a></li>
-                    <li><a href="#">Pedido</a></li>
-                    <li><a href="#">Alterar</a></li>
-                    <li><a href="#">Alterar</a></li>
-                    <li class="link-dir"><a href="#">Sair</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div id="nav-placeholder"></div>
         <main class="container text-light mt-5">
             <h1>Pedido</h1>
             <form action="PaginaCliente.jsp" method="post" class="mt-4">

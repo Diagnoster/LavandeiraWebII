@@ -13,6 +13,7 @@
         <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
         <link href="css/main.css" type="text/css" rel="stylesheet">
         <title>Cadastro</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     </head>
     <body>
         <div class="container text-center container-border">

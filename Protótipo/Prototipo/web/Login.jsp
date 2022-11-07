@@ -12,6 +12,7 @@
         <title>JSP Page</title>
         <link href="https://bootswatch.com/3/superhero/bootstrap.css" rel="stylesheet">
         <link href="css/main.css" type="text/css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     </head>
     <body>
         <div class="container text-center" id="center">
