@@ -19,7 +19,7 @@
         <div class="container text-center container-border">
             <img onclick="location.href='index.html'" src="assets/logo.png" alt="alt"/></img>
             <legend>Cadastrar</legend>
-            <form action="" method="POST">
+            <form action="Login.jsp" method="POST">
                <div class="form-row">
                    <div class="form-group col-md-3">
                        <label for="inputCpf">CPF</label>
