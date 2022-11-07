@@ -15,17 +15,7 @@
         <title>Pedido - FastClean</title>
     </head>
     <body>
-        <header class="container-fluid shadow-sm mb-5">
-            <nav>
-                <ul>
-                    <li class="link-esq"><a href="index.html">Fastclean</a></li>
-                    <li><a href="#">Pedido</a></li>
-                    <li><a href="#">Alterar</a></li>
-                    <li><a href="#">Alterar</a></li>
-                    <li class="link-dir"><a href="#">Sair</a></li>
-                </ul>
-            </nav>
-        </header>
+        <jsp:include page="header.jsp" /> <%-- HEADER --%>
         <main class="container text-light mt-5">
             <h1>Pedido</h1>
             <form action="PaginaCliente.jsp" method="post" class="mt-4">

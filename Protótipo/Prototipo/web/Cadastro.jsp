@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="container text-center container-border">
-            <img src="assets/logo.png" alt="alt"/></img>
+            <img onclick="location.href='index.html'" src="assets/logo.png" alt="alt"/></img>
             <legend>Cadastrar</legend>
             <form action="" method="POST">
                <div class="form-row">
