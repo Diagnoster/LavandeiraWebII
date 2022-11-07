@@ -25,7 +25,7 @@
 >>>>>>> 23f197dac81bcaedb606a2e776ec6717137f8b5e-->
         <main class="container text-light mt-5">
             <h1>Pedido</h1>
-            <form action="PaginaCliente.jsp" method="post" class="mt-4">
+            <form action="dashboard.jsp" method="post" class="mt-4">
                 <div class="form-group row">
                   <label for="qtde" class="col-sm-2 col-form-label">Quantidade de Roupas</label>
                   <div class="col-sm-1">
