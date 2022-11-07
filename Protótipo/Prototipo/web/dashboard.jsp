@@ -44,7 +44,7 @@
                 <td>3</td>
                 <td>Escuras</td>
                 <td>Calça</td>
-                <td>Aberto</td>
+                <td><span style="color: red; font-weight: bolder;">Aberto</span></td>
               </tr>
               <tr>
                 <th scope="row"><a id="link" href="viewRequest.jsp">0002</a></th>
@@ -52,7 +52,7 @@
                 <td>5</td>
                 <td>Mista</td>
                 <td>Camisa</td>
-                <td>Aberto</td>
+                <td><span style="color: red; font-weight: bolder;">Aberto</span></td>
               </tr>
               <tr>
                 <th scope="row"><a id="link" href="viewRequest.jsp">0003</a></th>
@@ -60,7 +60,7 @@
                 <td>10</td>
                 <td>Claras</td>
                 <td>Outros</td>
-                <td>Aberto</td>
+                <td><span style="color: red; font-weight: bolder;">Aberto</span></td>
               </tr>
               <tr>
                 <th scope="row"><a id="link" href="viewRequest.jsp">0004</a></th>
@@ -68,7 +68,7 @@
                 <td>7</td>
                 <td>Mista</td>
                 <td>Calça</td>
-                <td>Aberto</td>
+                <td><span style="color: red; font-weight: bolder;">Aberto</span></td>
               </tr >
              
              
