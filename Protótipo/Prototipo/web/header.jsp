@@ -10,9 +10,9 @@
     <nav>
         <ul>
             <li class="link-esq"><a href="dashboard.jsp">Fastclean</a></li>
+            <li><a id="diferente" href="dashboard.jsp">Dashboard</a></li>
             <li><a id="diferente" href="FazerPedido.jsp">Novo Pedido</a></li>
             <li><a id="diferente" href="PesquisarPedidos.jsp">Pesquisar Pedido</a></li>
-            <li><a id="diferente" href="ConsultarPedido.jsp">Consultar Pedido</a></li>
             <li class="link-dir"><a href="index.html">Sair</a></li>
         </ul>
     </nav>
