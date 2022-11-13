@@ -19,7 +19,7 @@
     <body>
      <jsp:include page="header.jsp" /> <%-- HEADER --%>
         <div class="container text-light mt-5">
-            <form action="js/search.js" method="post">
+            <form method="post">
                 <div class="form-group smallTopGap">
                     <label for="pedido"><h3>Pesquisar pedido</h3></label>
                     <div style="width: 50%" class="input-group">
