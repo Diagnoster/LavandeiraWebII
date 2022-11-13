@@ -42,7 +42,7 @@
                     </tr>
                 </tbody>
             </table>
-            <table style="color: white" class="table">
+            <table style="background-color: white" class="table">
                 <thead>
                     <tr>
                         <th>Total de itens</th>

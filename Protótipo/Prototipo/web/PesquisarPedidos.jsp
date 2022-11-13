@@ -9,19 +9,22 @@
 <html>
     <head>
         <title>Pesquisa de pedidos</title>
-          <jsp:include page="sources.jsp" /> <%-- HEAD --%> 
-           
+         <jsp:include page="sources.jsp" /> <%-- HEAD --%> 
+         <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous"></script>
+         <script src="js/search.js"></script>
          <link rel="stylesheet" href="css/dashboard.css"/>
     </head>
     <body>
      <jsp:include page="header.jsp" /> <%-- HEADER --%>
         <div class="container text-light mt-5">
-            <form method="post">
+            <form action="js/search.js" method="post">
                 <div class="form-group smallTopGap">
                     <label for="pedido"><h3>Pesquisar pedido</h3></label>
                     <div style="width: 50%" class="input-group">
                         <input 
-                            name="pedido" type="text" id="inputPedido" class="form-control"
+                            name="pedido" type="text" id="search" class="form-control"
                             placeholder="Pesquisar pedido...">
                         <button class="btn btn-secondary" type="submit" >Pesquisar</button>
                     </div>
@@ -85,64 +88,43 @@
                         <th>Valor Total</th>
                         <th>Prazo</th>
                         <th>Situação</th>
-                        <th>Visualizar Pedido</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>00001</td>
-                        <td>Jõao da Silva</td>
+                        <td><a href="ConsultarPedido.jsp">0001</a></td>
+                        <td>Joao da Silva</td>
                         <td>R$ 250,00</td>
                         <td>01/12/2022</td>
                         <td>Aberto</td>
-                        <td><a href="ConsultarPedido.jsp"><button style="background-color: transparent; border: none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                            </svg></button></a>
-                        </td>
                     </tr>
                     <tr>
-                        <td>00001</td>
-                        <td>Jõao da Silva</td>
+                        <td><a href="ConsultarPedido.jsp">0002</a></td>
+                        <td>Maria</td>
                         <td>R$ 250,00</td>
                         <td>01/12/2022</td>
-                        <td>Aberto</td>
-                        <td><a href="ConsultarPedido.jsp"><button style="background-color: transparent; border: none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                            </svg></button></a>
-                        </td>
+                        <td>Fechado</td>
                     </tr>
                     <tr>
-                        <td>00001</td>
-                        <td>Jõao da Silva</td>
+                        <td><a href="ConsultarPedido.jsp">0003</a></td>
+                        <td>Lucas</td>
                         <td>R$ 250,00</td>
                         <td>01/12/2022</td>
-                        <td>Aberto</td>
-                        <td><a href="ConsultarPedido.jsp"><button style="background-color: transparent; border: none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                            </svg></button></a>
-                        </td>
+                        <td>Aguardando Pagamento</td>
                     </tr>
                     <tr>
-                        <td>00001</td>
-                        <td>Jõao da Silva</td>
-                        <td>R$ 250,00</td>
+                        <td><a href="ConsultarPedido.jsp">0004</a></td>
+                        <td>James</td>
+                        <td>R$ 125,00</td>
                         <td>01/12/2022</td>
-                        <td>Aberto</td>
-                        <td><a href="ConsultarPedido.jsp"><button style="background-color: transparent; border: none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                            </svg></button></a>
-                        </td>
+                        <td>Cancelado</td>
                     </tr>
                     <tr>
-                        <td>00001</td>
+                        <td><a href="ConsultarPedido.jsp">0005</a></td>
                         <td>Jõao da Silva</td>
                         <td>R$ 250,00</td>
                         <td>01/12/2022</td>
                         <td>Aberto</td>
-                        <td><a href="ConsultarPedido.jsp"><button style="background-color: transparent; border: none"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                            </svg></button></a>
-                        </td>
                     </tr>
                 </tbody>
             </table>
