@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group smallTopGap">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="radioState" id="radioTodos">
+                        <input checked class="form-check-input" type="radio" name="radioState" id="radioTodos">
                         <label class="form-check-label" for="radioTodos">
                           Todos
                         </label>
