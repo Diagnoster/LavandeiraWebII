@@ -67,11 +67,15 @@
                    <input type="text" class="form-control" id="bairro" placeholder="Bairro Feliz">
                </div>
                <div class="form-group">
+                   <div class="form-group col-md-2">
+                        <label for="inputEstado">Número</label>
+                        <input class="form-control" name="numero" type="text" id="numero" size="2" /></label><br />
+                   </div>
                    <div class="form-group col-md-4">
                        <label for="inputCidade">Cidade</label>
                        <input type="text" class="form-control" id="cidade" placeholder="Cidade da Alegria">        
                    </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-2">
                         <label for="inputEstado">Estado</label>
                         <input class="form-control" name="uf" type="text" id="uf" size="2" /></label><br />
                    </div>
