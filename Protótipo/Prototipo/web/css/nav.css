@@ -9,7 +9,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
 header {
     position: relative;
-    z-index: 0;
+    z-index: 999;
     background-color: white;
 }
 
@@ -89,7 +89,6 @@ header {
         padding: 2rem;
         gap: 2rem;
         width: 100vw;
-        
         background-color: white;
         z-index: -2;
         transition: transform .5s ease-in;
