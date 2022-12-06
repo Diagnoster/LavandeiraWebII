@@ -14,114 +14,98 @@
     </head>
     <body>
         <jsp:include page="header.jsp" />
-        <main class="container text-light mt-5">
-            <h1>Novo Pedido</h1>
+        <div class="container">
+            <h1 class="text-light text-center">Novo Pedido</h1>
             <form action="#" method="post">
-                <div class="d-flex flex-wrap p-3 justify-content-around mt-5 bg-primary rounded">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-5">
-                        <h2>Masculina</h2>
-                        <div class="form-group row">
-                            <div class="col-sm-10">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="m-roupas" id="m-camisa">
-                                    <label class="form-check-label" for="m-camisa">Camisa/Camiseta</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="m-roupas" id="m-calca">
-                                    <label class="form-check-label" for="m-calca">Calça</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="m-roupas" id="m-casaco">
-                                    <label class="form-check-label" for="m-casaco">Casaco</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="m-roupas" id="m-jaqueta">
-                                    <label class="form-check-label" for="m-jaqueta">Jaqueta</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="m-roupas" id="m-terno">
-                                    <label class="form-check-label" for="m-terno">Terno</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="m-roupas" id="m-intimas">
-                                    <label class="form-check-label" for="m-meia">Roupas íntimas</label>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                        <h2>Feminina</h2>
-                        <div class="form-group row">
-                            <div class="col-sm-10">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="f-roupas" id="f-camisa">
-                                    <label class="form-check-label" for="f-camisa">Camisa/Camiseta</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="f-roupas" id="f-calca">
-                                    <label class="form-check-label" for="f-calca">Calça</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="f-roupas" id="f-casaco">
-                                    <label class="form-check-label" for="f-casaco">Casaco</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="f-roupas" id="f-saia">
-                                    <label class="form-check-label" for="f-saia">Saia</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="f-roupas" id="f-vestido">
-                                    <label class="form-check-label" for="f-vestido">Vestido</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="f-roupas" id="f-intimas">
-                                    <label class="form-check-label" for="f-meia">Roupas íntimas</label>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <h2>Cama, Mesa e Banho</h2>
-                        <div class="form-group row">
-                            <div class="col-sm-10">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="cmb-roupas" id="cmb-edredom">
-                                    <label class="form-check-label" for="f-camisa">Edredom/Cobertor</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="cmb-roupas" id="cmb-almofada">
-                                    <label class="form-check-label" for="f-calca">Almofada/Travesseiro</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="cmb-roupas" id="cmb-lencol">
-                                    <label class="form-check-label" for="f-casaco">Lençol</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="cmb-roupas" id="cmb-toalha">
-                                    <label class="form-check-label" for="f-saia">Toalha</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="cmb-roupas" id="cmb-tapete">
-                                    <label class="form-check-label" for="f-vestido">Tapete</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-                <div class="mt-3">
-                    <button class="btn btn-light orc-btn">Solicitar Orçamento</button>
-                    <div class="form-group w-50 lh-1 mt-5 sub-div hidden">
-                        <h2>Orçamento</h2>
-                        <p class="mb-1 mt-4">Valor R$<span class="sp-valor">####</span></p>
-                        <p class="mb-4">Prazo: <span class="sp-prazo">####</span></p>
-                        <div class="col-sm-10">
-                          <button type="submit" class="btn btn-success">Confirmar</button>  
-                          <button class="btn btn-danger">Recusar</button>
-                        </div>
+                <h3 class="text-light mt-3">Roupas</h3>
+                <table class="table table-light">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Selecionar</th>
+                            <th class="w-50">Nome</th>
+                            <th class="w-25">Valor Unidade</th>
+                            <th class="w-25">Prazo</th>
+                            <th>Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-tbody">
+                            <td class="field-check text-center"><input type="checkbox" class="checkSel" name="checkSeleciona"></td>
+                            <td class="field-nome">Camisa/Camiseta</td>
+                            <td class="field-valor">R$5.00</td>
+                            <td class="field-prazo">5 dias úteis</td>
+                            <td class="field-qtde"><input class="inpQtde" type="number" min="1" max="10" name="quantidade" disabled></td>
+                        </tr>
+                        <tr class="row-tbody">
+                            <td class="field-check text-center"><input type="checkbox" class="checkSel" name="checkSeleciona"></td>
+                            <td class="field-nome">Calça</td>
+                            <td class="field-valor">R$6.00</td>
+                            <td class="field-prazo">7 dias úteis</td>
+                            <td class="field-qtde"><input class="inpQtde" type="number" min="1" max="10" name="quantidade" disabled></td>
+                        </tr>
+                        <tr class="row-tbody">
+                            <td class="field-check text-center"><input type="checkbox" class="checkSel" name="checkSeleciona"></td>
+                            <td class="field-nome">Casaco</td>
+                            <td class="field-valor">R$7.00</td>
+                            <td class="field-prazo">6 dias úteis</td>
+                            <td class="field-qtde"><input class="inpQtde" type="number" min="1" max="10" name="quantidade" disabled></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 class="text-light mt-3">Cama,Mesa e Banho</h3>
+                <table class="table table-light">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Selecionar</th>
+                            <th class="w-50">Nome</th>
+                            <th class="w-25">Valor Unidade</th>
+                            <th class="w-25">Prazo</th>
+                            <th>Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-tbody">
+                            <td class="field-check text-center"><input type="checkbox" class="checkSel" name="checkSeleciona"></td>
+                            <td class="field-nome">Edredom/Cobertor</td>
+                            <td class="field-valor">R$5.00</td>
+                            <td class="field-prazo">5 dias úteis</td>
+                            <td class="field-qtde"><input class="inpQtde" type="number" min="1" max="10" name="quantidade" disabled></td>
+                        </tr>
+                        <tr class="row-tbody">
+                            <td class="field-check text-center"><input type="checkbox" class="checkSel" name="checkSeleciona"></td>
+                            <td class="field-nome">Travesseiro</td>
+                            <td class="field-valor">R$6.00</td>
+                            <td class="field-prazo">7 dias úteis</td>
+                            <td class="field-qtde"><input class="inpQtde" type="number" min="1" max="10" name="quantidade" disabled></td>
+                        </tr>
+                        <tr class="row-tbody">
+                            <td class="field-check text-center"><input type="checkbox" class="checkSel" name="checkSeleciona"></td>
+                            <td class="field-nome">Toalha</td>
+                            <td class="field-valor">R$7.00</td>
+                            <td class="field-prazo">6 dias úteis</td>
+                            <td class="field-qtde"><input class="inpQtde" type="number" min="1" max="10" name="quantidade" disabled></td>
+                        </tr>
+                        <tr class="row-tbody">
+                            <td class="field-check text-center"><input type="checkbox" class="checkSel" name="checkSeleciona"></td>
+                            <td class="field-nome">Lençol</td>
+                            <td class="field-valor">R$7.00</td>
+                            <td class="field-prazo">6 dias úteis</td>
+                            <td class="field-qtde"><input class="inpQtde" type="number" min="1" max="10" name="quantidade" disabled></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-success btnOrcamento">Solicitar Orçamento</button>
+                <div class="orcamento hidden text-light mt-2 fw-bolder">
+                    <p class="fs-3">Valor total do pedido: R$<spam class="orcamentoValor">####</spam>.00</p>
+                    <p class="fs-3">Prazo de lavagem: <spam class="orcamentoPrazo">#</spam> dias úteis</p>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-success">Aceitar</button>
+                        <a class="btn btn-danger" href="FazerPedido.jsp">Recusar</a>
                     </div>
                 </div>
+                
             </form>
-        </main>
+        </div>
         <script src="./js/pedido.js"></script>
     </body>
 </html>
