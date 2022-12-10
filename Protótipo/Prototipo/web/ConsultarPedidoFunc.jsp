@@ -16,6 +16,7 @@
         <jsp:include page="header.jsp" /> <%-- HEADER --%>
         <div class="container text-light mt-5">
             <h2>Consulta: Pedido 00001</h2>
+            <h3>Cliente: João da Silva</h3>
             <table id="mainTable" class="table">
                 <thead>
                     <tr>
@@ -56,21 +57,26 @@
                         <td>R$ 16,00</td>
                     </tr>
                 </tbody>
-            </table>
+            </table>  
             <div class="mediumTopGap">
-                <button hidden class="btn btn-success">
-                    Aprovar Orçamento
-                </button>  
-                <button hidden class="btn btn-danger">
-                    Rejeitar Orçamento
-                </button>
-                <button class="btn btn-danger">
-                    Cancelar Pedido
-                </button>  
-                <button class="btn btn-success">
-                    Pagar pedido
-                </button>  
-                <a href="PesquisarPedidos.jsp">
+                <a href="PesquisarPedidosFunc.jsp">
+                    <button onclick='confirm("Tem ceteza?\nApós confirmar o recolhimento O pedido não poderá ser cancelado.")'
+                            class="btn btn-success">
+                        Confirmar Recolhimento
+                    </button>  
+                </a> 
+                <a href="PesquisarPedidosFunc.jsp">
+                    <button class="btn btn-success">
+                        Confirmar Lavagem
+                    </button>
+                </a> 
+                <a href="PesquisarPedidosFunc.jsp">
+                    <button onclick='confirm("Tem ceteza que deseja encerrar o pedido?")'
+                            class="btn btn-secondary">
+                        Finalizar Pedido
+                    </button>
+                </a> 
+                <a href="PesquisarPedidosFunc.jsp">
                     <button class="btn btn-secondary">
                         Voltar
                     </button>
