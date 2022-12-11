@@ -10,15 +10,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Manutencão Funcionário</title>
-        <link href="https://bootswatch.com/3/superhero/bootstrap.css" rel="stylesheet">
+<!--        <link href="https://bootswatch.com/3/superhero/bootstrap.css" rel="stylesheet">-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.png">
         <link href="css/manutencaoFuncionario.css" type="text/css" rel="stylesheet">
-        <link href="css/main.css" type="text/css" rel="stylesheet">
+        <!--<link href="css/main.css" type="text/css" rel="stylesheet">-->
         <script src="js/manutencaoFuncionario.js"></script>
+        <jsp:include page="sources.jsp" /> <%-- HEAD --%>  
     </head>
+        <jsp:include page="header.jsp" /> <%-- HEADER --%>
     <body>
-        <div class="container text-center container-border">
-            <img class="img" onclick="location.href='index.html'" src="assets/logo.png" alt="alt"/></img>
+
+        <div style="padding:30px;" class="container text-center container-border">
+            <!--<img class="img" onclick="location.href='index.html'" src="assets/logo.png" alt="alt"/></img>-->
             <legend>Manutenção de Funcionários</legend>
             <form id="frmCadastro">
                <div class="form-row">
