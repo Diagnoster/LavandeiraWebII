@@ -29,7 +29,7 @@
                    <div class="form-group col-md-6">
                         <label for="inputNome">Nome</label>
                        <div class="input-group">
-                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input type="text" id="inputNome" class="form-control" placeholder="Digite seu nome" required>
                        </div>
                    </div>
